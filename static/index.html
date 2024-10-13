@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<script src="/static/myjs.js"></script>
+<link rel="stylesheet" href="/static/mystyles.css">
+<title>Question Helper</title>
+</head>
+<body>
+    <header class="container">
+        <p style="text-align: right;">QUESTION HELPER</p>
+    </header>
+    <main class="container">
+        <div style="display: flex;">
+            <blockquote style="width:100%; font-size:xx-large" id="question">Why do we ride horses?</blockquote>
+        </div>  
+        <fieldset role="group">
+            <input id="topic" type="text" placeholder="Enter a topic" value="Horses" onchange="updateChanged()">
+            <input id="topic-submit" type="submit" value="Generate Question" onclick="regenerateQuestion()">
+        </fieldset>
+        <div class="grid" id = "topic-suggestions" style="margin-bottom: var(--pico-typography-spacing-vertical);">
+            <button onclick="selectNewTopicButton(this)">Animals</button>
+            <button onclick="selectNewTopicButton(this)">Cowboys</button>
+            <button onclick="selectNewTopicButton(this)">Hay</button>
+        </div>
+        <hr/>
+        <h4>Context</h4>
+        <input id="attributes" type="text" placeholder="Additional attributes e.g. Silly, Serious, Emotional" onchange="updateChanged()">
+        <div style="display: flex;">
+            <input type="file" id="file-input" onchange="uploadFile(this)">
+            <button class="outline secondary bottomspace" style="display: none;" id="remove-file" onclick="removeFile(this)">&#x2715;</button>
+        </div>
+        <fieldset role="group">
+            <input inert type="submit" value="Style" class="secondary">
+            <select id="style" onchange=updateChanged()>
+                <option value="default">Default</option>
+                <option value="lexFridman">Lex Fridman Podcast</option>
+            </select>
+            
+        </fieldset>
+    </main>
+</body>
+</html>

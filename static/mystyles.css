@@ -1,0 +1,12 @@
+#topic-suggestions button {
+    margin: 5px;
+}
+
+.refreshbutton {
+    margin-bottom: var(--pico-block-spacing-vertical);
+    padding: var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal);
+}
+
+.bottomspace {
+    margin-bottom: var(--pico-spacing);
+}
