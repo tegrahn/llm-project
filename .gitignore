@@ -1,0 +1,9 @@
+key.txt
+
+venv/
+
+contexts/
+
+.ipynb_checkpoints/
+
+__pycache__/

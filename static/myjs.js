@@ -95,7 +95,6 @@ async function uploadFile(fileElement){
         method: 'POST',
         body: formData
     });
-    fileElement.disabled = false
     removeFileButton.innerHTML = '&#x2715;'
     removeFileButton.setAttribute('aria-busy','false')
 }

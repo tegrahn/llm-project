@@ -17,7 +17,7 @@ SYSTEM_PROMPT_STYLE = (
 INPUT_PROMPT_DEFAULT = (
     "Create a single short discussion question that must be related to {topic}. "
     "The question must be different from all the following questions: {prev_questions}. "
-    "The question must only contain text with no markup, emojis or additional formatting"
+    "\nThe response must only contain a single question with no markup, emojis or additional formatting"
 )
 
 INPUT_PROMPT_CONTEXT= (
@@ -26,7 +26,7 @@ INPUT_PROMPT_CONTEXT= (
     "Use the following snippits gain insight to context of the topic "
     "and assist in the generation of a relevant question:"
     "{document_context}"
-    "\nThe question must only contain text with no markup, emojis or additional formatting"
+    "\nThe response must only contain a single question with no markup, emojis or additional formatting"
 
 )
 
@@ -34,7 +34,7 @@ INPUT_PROMPT_ATTRIBUTES = (
     "Create a single short discussion question that must be related to {topic}. "
     "The question must be different from all the following questions: {prev_questions}. "
     "The question should additionaly have the following attributes: {attributes}. "
-    "The question must only contain text with no markup, emojis or additional formatting"
+    "\nThe response must only contain a single question with no markup, emojis or additional formatting"
 )
 
 INPUT_PROMPT_ATTRIBUTES_CONTEXT = (
@@ -44,7 +44,7 @@ INPUT_PROMPT_ATTRIBUTES_CONTEXT = (
     "Use the following snippits gain insight to context of the topic "
     "and assist in the generation of a relevant question:"
     "{document_context}"
-    "\nThe question must only contain text with no markup, emojis or additional formatting"
+    "\nThe response must only contain the question with no markup, emojis or additional formatting"
 )
 
 
